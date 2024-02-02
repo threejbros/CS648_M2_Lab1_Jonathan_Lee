@@ -68,6 +68,7 @@ function playGame (userChoice, computerChoice) {
 }
 
 function main() {
+    "use strict";
     var userChoice, computerChoice;
     
     userChoice = getUserChoice();
