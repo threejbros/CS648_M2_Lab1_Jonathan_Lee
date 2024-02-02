@@ -1,3 +1,4 @@
+/*eslint-env browser*/
 function getUserChoice () {
     "use strict";
     var input;
@@ -29,7 +30,8 @@ function getComputerChoice () {
     }
 }
 
-function letterToFullName(letter) {
+function letterToFullName (letter) {
+    "use strict";
     switch (letter) {
         case "R":
             return "Rock";
@@ -41,6 +43,7 @@ function letterToFullName(letter) {
 }
 
 function playGame (userChoice, computerChoice) {
+    "use strict";
     if (userChoice === "R" && computerChoice === "S") {
         window.alert("You selected " + letterToFullName(userChoice) + "; the computer selected " + letterToFullName(computerChoice) + ". YOU WIN!");
     }
